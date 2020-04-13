@@ -4,7 +4,7 @@ Zhicheng Zhang - G45149856
 
 
 
-###1. Introduction
+### 1. Introduction
 
 Compare the PISA and Alpha ISA by executing the same benchmarks on the two configurations.
 
