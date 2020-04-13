@@ -1,3 +1,4 @@
+#include<conio.h>
 #include <stdio.h>
 #include "calculate.h"
 #include "cuda_helper.h"
@@ -32,7 +33,7 @@ int main(int argc, char **argv)
   CudaDeviceList();
   SplitLine();
   Timer timer = Timer();
-  for (int size = 1; size <= 32768; size *= 2)
+  for (int size = 1; size <= 1024; size *= 2)
   {
     printf("size = %dx%d\n\n", size, size);
     Matrix m(size);
@@ -62,5 +63,7 @@ int main(int argc, char **argv)
     SplitLine();
     fflush(stdout);
   }
+  printf("Press any key to continue.\n");
+  getch();
   return 0;
 }
