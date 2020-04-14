@@ -71,9 +71,9 @@ void DotProductByCpu(Matrix *input_1, Matrix *input_2, Matrix *output)
     int temp = input_1->data[0];
     for (int j = 0; j < size; j++)
     {
-  int x = input_1->data[row * size + j];
-  int y = input_2->data[j * size + column];
-  result += input_1->data[row * size + j] * input_2->data[j * size + column];
+      int x = input_1->data[row * size + j];
+      int y = input_2->data[j * size + column];
+      result += input_1->data[row * size + j] * input_2->data[j * size + column];
     }
     output->data[i] = result;
   }
